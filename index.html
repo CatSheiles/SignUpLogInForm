@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Sign Up / Log In Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e04ccf61b7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="modal-wrapper">
+    <div class="login-wrapper">
+        <div class="collapsed-section hidden">
+            <div class="hide-section">
+                <h2 class="collapsed-heading">Have an Account?</h2>
+                <p class="collapsed-text">To keep connected with us please<br>login with your info</p>
+                    <button class="collapsed-btn" onclick="toggleOpen()">Log In</button>
+            </div>
+        </div>
+        <div class="form-wrapper login">
+            <h2 class="form-heading">Log In To Your Profile</h2>
+            <div class="other-icons">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <form action="" class="form login">
+                <span>or use your email account:</span>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" value="">
+                </div>
+                <div class="input-field">    
+                <i class="fa fa-key"></i>
+                <input type="password" placeholder="Password" value="">
+                </div>
+                <a href="#" id="forgot-password">Forgot Your Password?</a>
+                <button class="form-btn" type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="signup-wrapper">
+        <div class="collapsed-section">
+            <div class="hide-section">
+                <h2 class="collapsed-heading">New Here?</h2>
+                <p class="collapsed-text">Enter your personal details<br>and start a journey with us!</p>
+                    <button class="collapsed-btn" onclick="toggleOpen()">Sign Up</button>
+            </div>
+        </div>
+        <div class="form-wrapper signup hidden">
+            <h2 class="form-heading">Create Account</h2>
+            <div class="other-icons">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <form action="" class="form login">
+                <span>or use your email for registration:</span>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Name" value="">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" value="">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-key"></i>
+                    <input type="password" placeholder="Password" value="">
+                </div>
+                <button class="form-btn" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
